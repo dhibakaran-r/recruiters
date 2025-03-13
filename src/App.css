@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input{
+    @apply outline-none;
+}
+
+/* login style */
+
+.login_container{
+    @apply w-full h-svh flex justify-center items-center;
+}
+
+.login_wrap{
+    @apply w-3/4 p-8 bg-gray-200 flex justify-evenly items-center border border-gray-300 shadow-2xl rounded-md;
+}
+
+.login_img{
+    @apply w-1/2;
+}
+
+.login_form_container{
+    @apply flex flex-col justify-center items-center gap-2;
+}
+
+.logo{
+    @apply w-60 md:w-72 h-auto;
+}
+
+.form_wrap{
+    @apply flex flex-col justify-center items-center gap-2;
+}
+
+.input-field{
+    @apply w-60 md:w-72 ps-3 pe-11 py-2 border border-gray-600 outline-none rounded;
+}
+
+.password-field{
+    @apply flex items-center justify-center relative;
+}
+
+.loginBtn{
+    @apply w-60 md:w-72 px-20 py-2 font-semibold !text-white;
+}
+
+.errMsg{
+    @apply w-1/2 bg-slate-400 p-4 float-left border border-gray-400;
+}
+
+/* login style end */
+
+/* home style */
+
+.home_container{
+    @apply w-full h-dvh flex flex-col items-center;
+}
+
+.top_home_head{
+    @apply w-full h-40 bg-teal-600 flex items-center justify-center gap-40;
+}
+
+.top_home_head span{
+    @apply text-6xl text-orange-500 shadow-2xl bg-teal-400 p-2 rounded-full;
+}
+
+.top_home_head h1{
+    @apply text-6xl tracking-wider text-white;
+}
+
+.home_content{
+    @apply w-full h-lvh flex justify-around items-center;
+}
+
+.home_card{
+    @apply w-full flex flex-col items-center justify-center gap-8 capitalize;
+}
+
+.home_card h2{
+    @apply text-xl text-gray-500 border border-gray-400 p-2 rounded-md;
+}
+
+.home_card img{
+    @apply w-1/2 shadow-2xl;
+}
+
+.home_card a{
+    @apply w-60 capitalize border px-8 py-4 duration-300 text-center text-white rounded-md;
+}
+
+/* home style end */
+
+/* form style */
+
+.application_container{
+    @apply w-full bg-white rounded-lg;
+}
+
+.application_head{
+    @apply w-full h-60 flex flex-col bg-green-500;
+}
+
+.application_head h2{
+    @apply text-6xl text-white text-center font-bold my-4 flex flex-row justify-around;
+}
+
+.application_head p{
+    @apply text-xl text-center text-black font-semibold my-4 float-left;
+}
+
+.form_container{
+    @apply w-3/4 bg-white mx-auto p-8 absolute left-0 right-0 top-48 border border-gray-300 rounded-md shadow-2xl flex flex-col space-y-12 capitalize;
+}
+
+.form_container label{
+    @apply block font-medium;
+}
+
+.input_block{
+    @apply flex flex-row justify-around items-center gap-8;
+}
+
+.form_input{
+    @apply w-full p-2 ms-2 outline-none border border-gray-400 rounded;
+}
+
+.inputs{
+    @apply w-full space-y-4;
+}
+
+.form_btn{
+    @apply w-1/4 mx-auto bg-blue-500 text-white py-2 rounded hover:bg-blue-600;
+}
+
+/* form style end */
+
+/* hr interviewer panel style */
+
+.panel_container{
+    @apply w-full mb-12 flex flex-col items-center bg-white rounded-lg space-y-8;
+}
+
+.panel_head{
+    @apply w-full h-60 p-8 flex flex-col justify-between;
+}
+
+.panel_head_2{
+    @apply w-full h-40 p-8 flex flex-col justify-between bg-blue-500;
+}
+
+.panel_head_2 h2{
+    @apply text-6xl text-white text-center font-bold my-4 flex flex-row justify-around;
+}
+
+.header{
+    @apply flex flex-row justify-between;
+}
+
+.header h2{
+    @apply w-3/4 text-6xl text-white text-center font-bold my-4 flex flex-row gap-8;
+}
+
+.header .logout{
+    @apply p-1 float-end bg-gray-300 text-2xl text-red-600 rounded-full h-8 cursor-pointer;
+}
+
+.bgBlue{
+    @apply bg-blue-500;
+}
+
+.bgPurple{
+    @apply bg-purple-500;
+}
+
+.panel_nav{
+    @apply w-full flex flex-row justify-around items-center;
+}
+
+.details_container{
+    @apply w-full px-4 flex flex-row justify-center items-center gap-40;
+}
+
+.detail_card_wrap{
+    @apply w-1/2 p-4 ms-8 space-y-8 bg-gray-200 shadow-fbShadow;
+}
+
+.detail_card_wrap p{
+    @apply flex flex-col;
+}
+
+.detail_card_wrap span{
+    @apply text-gray-600 ms-4 mt-2;
+}
+
+.detail_head_wrap{
+    @apply  text-base 2xl:text-xl w-full flex flex-row justify-between gap-32;
+}
+
+/* hr interviewer panel style end */
+
+/* table style */
+
+.table_container{
+    @apply w-full p-4 rounded-lg;
+}
+
+.table_wrap{
+    @apply w-full border border-gray-400;
+}
+
+.table_head{
+    @apply w-full;
+}
+
+.table_head tr{
+    @apply rounded-md shadow-tableShadow;
+}
+
+.table_head tr th , .table_body tr td {
+    @apply p-1 text-xs xl:text-base xl:p-3 2xl:p-4  border-x-4 border-x-gray-300 first:border-l-0 last:border-r-0;
+}
+
+.table_body{
+    @apply w-full text-center;
+}
+
+.table_body tr{
+    @apply shadow-tableShadow;
+}
+
+/* {
+    @apply p-4 border-x-4 border-x-gray-300 first:border-l-0 last:border-r-0;
+} */
+
+.status_cell{
+    @apply flex items-center justify-center gap-4 p-2 bg-gray-200 rounded-md;
+}
+
+/* table style end */
+
+/* card style */
+
+.card_container{
+    @apply w-full mx-auto flex flex-wrap justify-evenly items-center;
+}
+
+.card_body{
+    @apply w-2/5 xl:w-4/12 bg-gray-200 p-4 flex flex-col gap-4 shadow-2xl border border-gray-400 rounded-md hover:scale-105 duration-300;
+}
+
+.card_body h1{
+    @apply text-3xl font-bold;
+}
+
+.card_body p{
+    @apply flex flex-col;
+}
+
+.card_body span{
+    @apply ms-2;
+}
+
+.card_head{
+    @apply mx-2 flex items-center justify-between border border-gray-300 p-2;
+}
+
+.card_block{
+    @apply w-full space-y-4;
+}
+
+.card_block h3{
+    @apply text-2xl font-semibold;
+}
+
+.card_block p{
+    @apply ms-4 flex flex-col;
+}
+
+.resume_block{
+    @apply w-[38rem] h-[45rem] 2xl:w-[50rem] 2xl:h-[50rem] border rounded mt-2;
+}
+
+/* card style end */
