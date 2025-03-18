@@ -93,7 +93,7 @@ input{
 /* form style */
 
 .application_container{
-    @apply w-full bg-white rounded-lg;
+    @apply w-full h-svh mb-28 bg-white rounded-lg;
 }
 
 .application_head{
